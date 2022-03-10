@@ -8,6 +8,6 @@ int main(void)
 	char x[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int len = sizeof(x);
 
-	system("echo hello world");
+	fwrite(x, 1, len, stderr);
 	return (1);
 }
