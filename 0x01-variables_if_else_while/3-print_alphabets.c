@@ -11,10 +11,13 @@ int main(void)
 
 	c = 'a';
 	d = toupper(c);
-	while (c <= 'z' && d <= 'Z')
+	while (c <= 'z')
 	{
 		putchar(c);
 		c += 1;
+	}
+	while (d <= 'Z')
+	{
 		putchar(d);
 		d += 1;
 	}
