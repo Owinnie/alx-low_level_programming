@@ -10,7 +10,7 @@ int main(void)
 	num = 0x0;
 	while (num <= 0xf)
 	{
-		putchar(48 + num);
+		putchar(num);
 		num += 1;
 	}
 	putchar('\n');
