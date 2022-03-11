@@ -14,8 +14,9 @@ int main(void)
 		num += 1;
 	}
 
-	char letter = 'a';
+	char letter;
 
+	letter = 'a';
 	while (letter <= 'f')
 	{
 		putchar(letter);
