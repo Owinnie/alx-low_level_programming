@@ -8,7 +8,7 @@ int main(void)
 	int num;
 
 	num = 0x0;
-	while (num <= 0xF)
+	while (num <= 0xf)
 	{
 		putchar(48 + num);
 		num += 1;
