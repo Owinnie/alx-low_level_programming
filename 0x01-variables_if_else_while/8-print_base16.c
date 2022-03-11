@@ -5,10 +5,10 @@
   */
 int main(void)
 {
-	int num;
+	char num;
 
-	num = 0x0;
-	while (num <= 0xf)
+	num = '0x0';
+	while (num <= '0xf')
 	{
 		putchar(num);
 		num += 1;
