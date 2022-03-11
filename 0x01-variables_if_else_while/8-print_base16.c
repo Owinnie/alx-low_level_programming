@@ -6,6 +6,7 @@
 int main(void)
 {
 	char num;
+	char letter;
 
 	num = '0';
 	while (num <= '9')
@@ -13,9 +14,6 @@ int main(void)
 		putchar(num);
 		num += 1;
 	}
-
-	char letter;
-
 	letter = 'a';
 	while (letter <= 'f')
 	{
