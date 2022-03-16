@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * _abs - absolute value of int
-  * @param: int
+  * @i: int
   *
   * Description: print abs values of int
   * Return: 0
