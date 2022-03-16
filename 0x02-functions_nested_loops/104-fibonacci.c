@@ -4,7 +4,6 @@
   * fib - fibonacci
   * @n: parameter
   * fibonacci sequence
-  * Return: sth
   *
   * main - function
   * main function
@@ -15,11 +14,12 @@ int fib(int n)
 	int f0;
 	int f1;
 	int fn;
+	int i;
 
 	f0 = 0;
 	f1 = 1;
 	printf("%d, ", f1);
-	for (int i = 2; i < n; i++)
+	for (i = 2; i < n; i++)
 	{
 		fn = f0 + f1;
 		f0 = f1;
