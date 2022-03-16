@@ -3,11 +3,8 @@
 /**
   * fib - fibonacci
   * @n: parameter
-  * fibonacci sequence
-  *
-  * main - function
-  * main function
-  * Return: 0
+  * Description: fibonacci sequence
+  * Return: sth
   */
 int fib(int n)
 {
@@ -36,6 +33,11 @@ int fib(int n)
 	printf("\n");
 	return (0);
 }
+/**
+  * main - function
+  * Description: main function
+  * Return: 0
+  */
 int main(void)
 {
 	int n = 100;
