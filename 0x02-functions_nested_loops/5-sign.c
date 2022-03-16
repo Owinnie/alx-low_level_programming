@@ -8,28 +8,21 @@
   */
 int print_sign(int n)
 {
-	int pos;
-	int zro;
-	int neg;
-
-	pos = '+';
-	zro = '0';
-	neg = '-';
 	if (n > 0)
 	{
-		_putchar(pos);
+		_putchar('+');
 		_putchar('\n');
 		return (1);
 	}
 	else if (n == 0)
 	{
-		_putchar(zro);
+		_putchar('0');
 		_putchar('\n');
 		return (0);
 	}
 	else
 	{
-		_putchar(neg);
+		_putchar('-');
 		_putchar('\n');
 		return (-1);
 	}
