@@ -23,11 +23,11 @@ int fib(int n)
 		f1 = fn;
 		if (i != (n - 1))
 		{
-			printf("%d, ", fn);
+			printf("%d, ", abs(fn));
 		}
 		else
 		{
-			printf("%d", fn);
+			printf("%d", abs(fn));
 		}
 	}
 	printf("\n");
