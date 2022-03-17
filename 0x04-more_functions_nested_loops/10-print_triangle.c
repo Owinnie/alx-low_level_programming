@@ -8,16 +8,15 @@ void print_triangle(int size)
 	int count;
 	int space;
 
-	count = 0;
 	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		while (count < size)
+		for (count = 0; count < size; count++)
 		{
-			if (count != size - 1)
+			if (count < size - 1)
 			{
 				_putchar('#');
 				_putchar('\n');
@@ -36,7 +35,6 @@ void print_triangle(int size)
 					_putchar('#');
 				}
 			}
-			count++;
 		}
 		_putchar('\n');
 	}
