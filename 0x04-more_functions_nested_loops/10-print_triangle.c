@@ -5,10 +5,9 @@
   */
 void print_triangle(int size)
 {
-	char c;
 	int count;
+	int space;
 
-	c = '#';
 	count = 0;
 	if (size <= 0)
 	{
@@ -20,16 +19,22 @@ void print_triangle(int size)
 		{
 			if (count != size - 1)
 			{
-				_putchar(c);
+				_putchar('#');
 				_putchar('\n');
-				_putchar(c);
-				_putchar(' ' * count);
-				_putchar(c);
+				_putchar('#');
+				for (space = 0; space < count; space++)
+				{
+					_putchar(' ');
+				}
+				_putchar('#');
 				_putchar('\n');
 			}
 			else
 			{
-				_putchar(c * count);
+				for (space = 0; space <= count; space++)
+				{
+					_putchar('#');
+				}
 			}
 			count++;
 		}
