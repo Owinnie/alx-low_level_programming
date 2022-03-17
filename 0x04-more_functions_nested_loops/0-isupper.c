@@ -8,19 +8,7 @@
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		_putchar(1);
+		return (1);
 	else
-		_putchar(0);
-	return (0);
-}
-/**
-  * main - calls _isupper
-  * Return: 0
-  */
-int main(void)
-{
-	int c = 'a';
-
-	_isupper(c);
-	return (0);
+		return (0);
 }
