@@ -14,14 +14,14 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (count = 0; count < size; count++)
+		for (count = 1; count <= size; count++)
 		{
 			if (count < size - 1)
 			{
 				_putchar('#');
 				_putchar('\n');
 				_putchar('#');
-				for (space = 0; space < count; space++)
+				for (space = count; space < size; space++)
 				{
 					_putchar(' ');
 				}
@@ -30,7 +30,7 @@ void print_triangle(int size)
 			}
 			else
 			{
-				for (space = 0; space <= count; space++)
+				for (space = 1; space <= count; space++)
 				{
 					_putchar('#');
 				}
