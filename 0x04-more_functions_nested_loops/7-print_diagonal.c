@@ -5,10 +5,9 @@
   */
 void print_diagonal(int n)
 {
-	char c;
 	int count;
+	int space;
 
-	c = '\\';
 	count = 0;
 	if (n <= 0)
 	{
@@ -16,11 +15,15 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		while (count != n)
+		while (count < n)
 		{
-			_putchar(c * n);
+			for (space = 0; space < count; space++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
 			count++;
 		}
-		_putchar('\n');
 	}
 }
