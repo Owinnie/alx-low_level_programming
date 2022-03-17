@@ -6,10 +6,10 @@ void print_most_numbers(void)
 {
 	int nums;
 
-	nums = 0;
-	while (nums <= 9)
+	nums = 48;
+	while (nums <= 57)
 	{
-		if (nums == 2 || nums == 4)
+		if (nums == 50 || nums == 52)
 			continue;
 		else
 			_putchar(nums);
