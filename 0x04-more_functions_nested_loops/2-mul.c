@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
   * mul - function
   * @a: par1
@@ -7,6 +8,5 @@
   */
 int mul(int a, int b)
 {
-	_putchar(a * b);
-	return (0);
+	return (a * b);
 }
