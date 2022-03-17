@@ -5,7 +5,7 @@
   */
 void print_line(int n)
 {
-	char c = '_';
+	char c = 95;
 
 	if (n <= 0)
 	{
