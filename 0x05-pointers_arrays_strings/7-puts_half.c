@@ -17,14 +17,18 @@ void puts_half(char *str)
 	if (count % 3 == 0)
 	{
 		odd = (count - 1) / 2;
+		for (; odd < count; odd++)
+		{
+			_putchar(str[odd]);
+		}
 	}
 	else
 	{
 		odd = count / 2;
-	}
-	for (; odd <= count; odd++)
-	{
-		_putchar(str[odd]);
+		for (; odd < count; odd++)
+		{
+			_putchar(str[odd]);
+		}
 	}
 	_putchar('\n');
 }
