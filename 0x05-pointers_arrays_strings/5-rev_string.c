@@ -5,16 +5,18 @@
   */
 void rev_string(char *s)
 {
+	char *w = s;
 	int index = 0;
 
-	while (*s != '\0')
+	while (*w != '\0')
 	{
 		index++;
-		s++;
+		w++;
 	}
 	while (index > 0)
 	{
-		s--;
+		w--;
 		index--;
 	}
+	s = w;
 }
