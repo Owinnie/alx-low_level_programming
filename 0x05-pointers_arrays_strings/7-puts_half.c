@@ -16,7 +16,7 @@ void puts_half(char *str)
 	if (count % 3 == 0)
 	{
 		odd = (count - 1) / 2;
-		for (; odd < count - 1; odd++)
+		for (; odd < count; odd++)
 		{
 			_putchar(str[odd + 1]);
 		}
