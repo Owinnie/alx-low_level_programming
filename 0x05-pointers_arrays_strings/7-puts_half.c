@@ -13,9 +13,9 @@ void puts_half(char *str)
 	{
 		count++;
 	}
-	if ((count - 1) % 3 == 0)
+	if (count % 3 == 0)
 	{
-		odd = (count - 2) / 2;
+		odd = (count - 1) / 2;
 		for (; odd < count - 1; odd++)
 		{
 			_putchar(str[odd]);
@@ -23,8 +23,8 @@ void puts_half(char *str)
 	}
 	else
 	{
-		odd = (count - 1) / 2;
-		for (; odd < count - 1; odd++)
+		odd = count / 2;
+		for (; odd < count; odd++)
 		{
 			_putchar(str[odd]);
 		}
