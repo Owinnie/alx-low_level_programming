@@ -7,4 +7,12 @@
   */
 void reverse_array(int *a, int n)
 {
+	int index, jndex, new;
+
+	for (index = 0, jndex = (n - 1); index < jndex; index++, jndex--)
+	{
+		new = a[index];
+		a[index] = a[jndex];
+		a[jndex] = new;
+	}
 }

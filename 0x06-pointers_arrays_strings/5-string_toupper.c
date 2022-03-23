@@ -7,4 +7,12 @@
   */
 char *string_toupper(char *s)
 {
+	int index;
+
+	for (index = 0; s[index] != '\0'; index++)
+	{
+		if (s[index] >= 'a' && s[index] <= 'z')
+			s[index] = s[index] - ' ';
+	}
+	return (s);
 }
