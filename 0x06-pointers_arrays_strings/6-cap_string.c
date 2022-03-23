@@ -8,15 +8,11 @@
 char *cap_string(char *s)
 {
 	int index;
+	char sep[] = ",\t;\n; .!?\"(){}";
 
 	for (index = 0; s[index] != '\0'; index++)
 	{
-		if (s[index - 1] == ',' || s[index - 1] == ';'
-			|| s[index - 1] == '.' || s[index - 1] == '!'
-			|| s[index - 1] == '?' || s[index - 1] == '('
-			|| s[index - 1] == ')' || s[index - 1] == '{'
-			|| s[index - 1] == '}' || s[index - 1] == '"'
-			|| s[index - 1] == ' ' || s[index - 1] == '\t' || s[index - 1] == '\n')
+		if (s[index - 1] == sep[index])
 		{
 			if (s[index] >= 'a' && s[index] <= 'z')
 			{
