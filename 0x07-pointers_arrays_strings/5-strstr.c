@@ -15,7 +15,8 @@ char *_strstr(char *haystack, char *needle)
 	index = 0;
 	for (; haystack[index] > '\0'; index++)
 	{
-		for (jndex = index; haystack[jndex] > '\0' && needle[jndex - index] > '\0'; jndex++)
+		for (jndex = index; haystack[jndex] > '\0' &&
+				needle[jndex - index] > '\0'; jndex++)
 		{
 			if (haystack[jndex] != needle[jndex - index])
 			{
