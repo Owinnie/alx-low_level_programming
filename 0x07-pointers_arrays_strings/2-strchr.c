@@ -9,5 +9,21 @@
   */
 char *_strchr(char *s, char c)
 {
-	return (c);
+	int index;
+	char *p;
+
+	index = 0;
+	while (s[index] != '\0')
+	{
+		if (s[index] == c)
+		{
+			p = &s[index];
+		}
+		else
+		{
+			return (NULL);
+		}
+		index++;
+	}
+	return (p);
 }
