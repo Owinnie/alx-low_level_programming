@@ -18,12 +18,9 @@ char *_strchr(char *s, char c)
 		if (s[index] == c)
 		{
 			p = &s[index];
-		}
-		else
-		{
-			return (NULL);
+			return (p);
 		}
 		index++;
 	}
-	return (p);
+	return (0);
 }
