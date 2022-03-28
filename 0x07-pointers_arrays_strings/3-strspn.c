@@ -9,12 +9,16 @@
   */
 unsigned int _strspn(char *s, char *accept)
 {
-	int index;
-	int jndex;
+	unsigned int index;
+	unsigned int jndex;
 
-	for (jndex = 0; accept[jndex] != '\0'; jndex++)
-		;
-	for (index = 0; index <= jndex && s[index] != '\0'; index++)
-		;
+	for (index = 0; s[index] != '\0'; index++)
+	{
+		for (jndex = 0; accept[jndex] != s[index]; jndex++)
+		{
+			if (accept[jndex] == '\0')
+				return (index);
+		}
+	}
 	return (index);
 }
