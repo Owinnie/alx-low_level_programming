@@ -22,7 +22,7 @@ int sq(int num1, int squared)
 	if (num1 * num1 == squared)
 		return (num1);
 	else if (num1 * num1 < squared)
-		return(sq(squared, num1 + 1));
+		return (sq(squared, num1 + 1));
 	else
 		return (-1);
 }

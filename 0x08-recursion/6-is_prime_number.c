@@ -15,6 +15,7 @@ int is_prime_number(int n)
   * check_prime - function
   * @n: int
   * @resp: int
+  *
   * Return: int
   */
 int check_prime(int n, int resp)
