@@ -23,22 +23,24 @@ int _strlen(char *s)
   */
 char *str_concat(char *s1, char *s2)
 {
-	int i;
+	int i, size1, size2;
 	char *s;
 
 	if (s1 == NULL)
 		s1 = '\0';
 	if (s2 == NULL)
 		s2 = '\0';
-	s = malloc((_strlen(s1) + _strlen(s2)) * (2 * sizeof(char)));
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
+	s = malloc((size1 + size2) * sizeof(char) + 1);
 	if (s == 0)
-		return (NULL);
-	for (i = 0; i <= _strlen(s1) + _strlen(s2); i++)
+		return (0);
+	for (i = 0; i <= size1 + size2; i++)
 	{
-		if (i < _strlen(s1))
+		if (i < size1)
 			s[i] = s1[i];
 		else
-			s[i] = s2[i - _strlen(s1)];
+			s[i] = s2[i - size1];
 	}
 	s[i] = '\0';
 	return (s);
