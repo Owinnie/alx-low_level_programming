@@ -10,5 +10,13 @@
   */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	return (s1);
+	unsigned int index;
+	char *ptr;
+
+	ptr = realloc(s1, 2 * sizeof(s1));
+	for (index = 0; index < n; index++)
+	{
+		ptr[sizeof(s1) + 1] = s2[index];
+	}
+	return (ptr);
 }
