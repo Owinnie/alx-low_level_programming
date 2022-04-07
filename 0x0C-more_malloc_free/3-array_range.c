@@ -9,5 +9,15 @@
   */
 int *array_range(int min, int max)
 {
-	return (min);
+	int i;
+	int *A;
+
+	if (min > max)
+		return (NULL);
+	A = malloc((max - min + 1) * sizeof(int));
+	if (A == NULL)
+		return (NULL);
+	for (i = 0; min + i <= max; i++)
+		A[i] = min + i;
+	return (A);
 }
