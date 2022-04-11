@@ -9,6 +9,7 @@
   */
 int wildcmp(char *s1, char *s2)
 {
+	// this function is incomplete
 	int index;
 
 	index = 0;
