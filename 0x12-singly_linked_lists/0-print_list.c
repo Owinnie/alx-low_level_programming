@@ -13,10 +13,7 @@ size_t print_list(const list_t *h)
 
 	while (copy != NULL)
 	{
-		if (copy->str == NULL)
-			printf("[%d] %s", copy->len, "(nil)");
-		else
-			printf("[%d] %s", copy->len, copy->str);
+		printf("[%d] %s\n", copy->len, copy->str != NULL ? copy->str : "(nil)");
 		copy = copy->next;
 		count++;
 	}
