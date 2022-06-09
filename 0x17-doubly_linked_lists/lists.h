@@ -22,7 +22,7 @@ typedef struct dlistint_s
   * @x: data
   * Return: ptr to new node
   */
-dlistint_t *getNewNode(const int x)
+dlistint_t *getNewNode(int x)
 {
 	dlistint_t *newNode = (dlistint_t *)malloc(sizeof(dlistint_t));
 
