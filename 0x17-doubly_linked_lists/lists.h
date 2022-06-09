@@ -10,7 +10,6 @@
   * @next: points to the next node
   *
   * Description: doubly linked list node structure
-  * 
   */
 typedef struct dlistint_s
 {
@@ -18,6 +17,22 @@ typedef struct dlistint_s
 	struct dlistint_s *prev;
 	struct dlistint_s *next;
 } dlistint_t;
+/**
+  * getNewNode - create a new node
+  * @x: data
+  * Return: ptr to new node
+  */
+dlistint_t *getNewNode(const int x)
+{
+	dlistint_t *newNode = (dlistint_t *)malloc(sizeof(dlistint_t));
+
+	if (newNode == NULL)
+		return (NULL);
+	newNode->n = x;
+	newNode->prev = NULL;
+	newNode->next = NULL;
+	return (newNode);
+}
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
