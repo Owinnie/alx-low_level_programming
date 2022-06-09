@@ -7,15 +7,15 @@
   */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *newNode = getNewNode(n);
+	dlistint_t *nw = getNewNode(n);
 
 	if (*head == NULL)
 	{
-		*head = newNode;
-		return (newNode);
+		*head = nw;
+		return (nw);
 	}
-	(*head)->prev = newNode;
-	newNode->next = *head;
-	*head = newNode;
-	return (newNode);
+	(*head)->prev = nw;
+	nw->next = *head;
+	*head = nw;
+	return (nw);
 }
